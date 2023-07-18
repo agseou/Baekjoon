@@ -37,7 +37,6 @@ int main(void){
     int cnt = 0;
     fill(vis,vis+n+1,0);
     for(int j = 1; j <= n; j++){
-      if(field[i][j] == INF) continue;
       if(field[i][j] > m) continue;
       int st = i;
       while(st != j){
