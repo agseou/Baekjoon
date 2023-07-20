@@ -10,9 +10,8 @@ int main(void){
   s.push({100000001,0});
   for(int i = 1; i <= N; i++){
     cin >> input;
-    while(input > s.top().first){
+    while(input > s.top().first)
       s.pop();
-    }
     cout << s.top().second << ' ';
     s.push({input,i});
   }
